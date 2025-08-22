@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  background: #0d0d0d;
+  color: #e0e0e0;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.content-area {
+  flex: 1;
+  margin-left: 320px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Responsive per sidebar stretta */
+@media (max-width: 768px) {
+  .content-area {
+    margin-left: 80px;
+  }
+}

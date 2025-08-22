@@ -1,0 +1,124 @@
+{
+  "sections": [
+    {
+      "title": "Fondamenta dell'Impero",
+      "buttons": [
+        {
+          "id": "world-overview",
+          "title": "Un mondo di devozione forzata",
+          "icon": "🌍"
+        },
+        {
+          "id": "races",
+          "title": "Razze sotto il giogo",
+          "icon": "🧬"
+        },
+        {
+          "id": "classes",
+          "title": "Classi della teocrazia",
+          "icon": "⚔️"
+        },
+        {
+          "id": "backgrounds",
+          "title": "Background di sottomissione e ribellione",
+          "icon": "📜"
+        },
+        {
+          "id": "feats",
+          "title": "Talenti della fede manipolata",
+          "icon": "✨"
+        }
+      ]
+    },
+    {
+      "title": "Vita nell'ombra",
+      "buttons": [
+        {
+          "id": "surveillance",
+          "title": "Sistema di sorveglianza e sospetto",
+          "icon": "📡"
+        },
+        {
+          "id": "devotion",
+          "title": "Devozione e condizionamento",
+          "icon": "🧠"
+        },
+        {
+          "id": "double-life",
+          "title": "Doppia vita e identità",
+          "icon": "🎭"
+        },
+        {
+          "id": "silence-zones",
+          "title": "Zone di silenzio",
+          "icon": "🤫"
+        },
+        {
+          "id": "resistance",
+          "title": "Resistenza e sabotaggio",
+          "icon": "🔥"
+        },
+        {
+          "id": "corruption-economy",
+          "title": "Economia della corruzione",
+          "icon": "💰"
+        }
+      ]
+    },
+    {
+      "title": "Strumenti del potere",
+      "buttons": [
+        {
+          "id": "money-equipment",
+          "title": "Denaro ed equipaggiamento",
+          "icon": "⚖️"
+        }
+      ]
+    },
+    {
+      "title": "Domini dell'Impero",
+      "buttons": [
+        {
+          "id": "world-sanctus",
+          "title": "Il mondo del Sanctus Dominium",
+          "icon": "🌐"
+        },
+        {
+          "id": "sanctus-centrale",
+          "title": "Sanctus Centrale",
+          "icon": "🏛️"
+        },
+        {
+          "id": "confinium-borealis",
+          "title": "Confinium Borealis",
+          "icon": "❄️"
+        },
+        {
+          "id": "prosperitas-australis",
+          "title": "Prosperitas Australis",
+          "icon": "🌾"
+        },
+        {
+          "id": "umbra-occidentalis",
+          "title": "Umbra Occidentalis",
+          "icon": "🌲"
+        },
+        {
+          "id": "orientalis-extrema",
+          "title": "Orientalis Extrema",
+          "icon": "⛰️"
+        },
+        {
+          "id": "insularum-mare",
+          "title": "Insularum Mare",
+          "icon": "🏝️"
+        },
+        {
+          "id": "cordillera-centralis",
+          "title": "Cordillera Centralis",
+          "icon": "🏔️"
+        }
+      ]
+    }
+  ]
+}
