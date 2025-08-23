@@ -1,0 +1,176 @@
+/* src/components/PageHeader.css */
+
+/* CSS Variables */
+:root {
+  --copper-primary: #b87333;
+  --copper-light: #daa520;
+  --copper-dark: #8b4513;
+  --text-primary: #e0e0e0;
+  --text-secondary: #c0c0c0;
+  --text-muted: #a0a0a0;
+  --focus-accent: #6495ed;
+  --success: #2e8b57;
+}
+
+/* Header Container */
+.page-header {
+  text-align: center;
+  margin: 40px 0 40px 0;
+  position: relative;
+  padding: 32px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Chapter Badge */
+.page-header__chapter-badge {
+  background: linear-gradient(135deg, var(--copper-primary), var(--copper-light));
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 0 3px 8px rgba(184, 115, 51, 0.3);
+  border: 2px solid var(--copper-dark);
+}
+
+/* Chapter Icon (Emoji) */
+.page-header__chapter-icon {
+  font-size: 3rem;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Chapter SVG Icon */
+.page-header__chapter-svg {
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+}
+
+.page-header__svg-icon {
+  width: 48px;
+  height: 48px;
+  filter: brightness(0) saturate(100%) invert(73%) sepia(69%) saturate(472%) hue-rotate(8deg) brightness(92%) contrast(89%);
+}
+
+/* Page Title */
+.page-header__page-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--copper-light);
+  margin: 0 auto 8px;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(218, 165, 32, 0.3);
+  line-height: 1.1;
+  position: relative;
+  display: inline-block;
+  padding: 0 16px;
+  max-width: 90%;
+}
+
+.page-header__page-title::before,
+.page-header__page-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--copper-primary), var(--copper-light));
+  transform: translateY(-50%);
+}
+
+.page-header__page-title::before {
+  left: -65px;
+}
+
+.page-header__page-title::after {
+  right: -65px;
+}
+
+/* Page Subtitle */
+.page-header__page-subtitle {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 700px;
+  line-height: 1.4;
+  padding: 0 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 20px 12px;
+    margin: 32px 0 32px 0;
+  }
+  
+  .page-header__chapter-badge {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+  }
+  
+  .page-header__chapter-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .page-header__svg-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .page-header__page-title {
+    font-size: 2.2rem;
+    padding: 0 12px;
+    margin-bottom: 8px;
+  }
+  
+  .page-header__page-title::before,
+  .page-header__page-title::after {
+    display: none;
+  }
+  
+  .page-header__page-subtitle {
+    font-size: 1.1rem;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 16px 8px;
+    margin: 24px 0 24px 0;
+  }
+  
+  .page-header__page-title {
+    font-size: 1.8rem;
+  }
+  
+  .page-header__chapter-icon {
+    font-size: 2rem;
+  }
+  
+  .page-header__svg-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .page-header__page-subtitle {
+    font-size: 1rem;
+  }
+}

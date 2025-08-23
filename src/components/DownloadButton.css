@@ -1,0 +1,110 @@
+/* CSS Variables */
+:root {
+  --copper-primary: #b87333;
+  --copper-light: #daa520;
+  --copper-dark: #8b4513;
+  --text-primary: #e0e0e0;
+  --text-secondary: #c0c0c0;
+  --text-muted: #a0a0a0;
+  --focus-accent: #6495ed;
+  --success: #2e8b57;
+}
+
+/* Download Button Container */
+.download-button-container {
+  text-align: center;
+  margin-bottom: 32px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Download Button */
+.download-button {
+  background: linear-gradient(135deg, var(--copper-dark), var(--copper-primary));
+  color: #fff;
+  border: 2px solid var(--copper-primary);
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.download-button:hover {
+  background: linear-gradient(135deg, var(--copper-primary), var(--copper-light));
+  color: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(184, 115, 51, 0.4);
+}
+
+.download-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Download Button Icon */
+.download-button__icon {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(180deg) brightness(100%) contrast(100%);
+  transition: filter 0.3s ease;
+}
+
+.download-button:hover .download-button__icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+/* Varianti del container */
+.download-button-container.center {
+  text-align: center;
+}
+
+.download-button-container.left {
+  text-align: left;
+}
+
+.download-button-container.right {
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .download-button-container {
+    margin-bottom: 24px;
+  }
+  
+  .download-button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    gap: 6px;
+  }
+  
+  .download-button__icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-button-container {
+    margin-bottom: 20px;
+  }
+  
+  .download-button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}

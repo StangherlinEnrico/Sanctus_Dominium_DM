@@ -1,8 +1,6 @@
 import React from "react";
 import ArchivePage from "./ArchivePage";
 import WorldOverviewPage from "./WorldOverviewPage";
-import RacesPage from "./RacesPage";
-import ClassesPage from "./ClassesPage";
 
 interface PageRouterProps {
   currentPage: string;
@@ -28,11 +26,9 @@ const PageRouter: React.FC<PageRouterProps> = ({
       case "world-overview":
         return <WorldOverviewPage />;
       case "races":
-        return <RacesPage />;
+        return <PlaceholderPage title="Razze" />;
       case "classes":
-        return <ClassesPage />;
-
-      // Pagine non ancora implementate - placeholders
+        return <PlaceholderPage title="Classi" />;
       case "backgrounds":
         return (
           <PlaceholderPage title="Background di sottomissione e ribellione" />
