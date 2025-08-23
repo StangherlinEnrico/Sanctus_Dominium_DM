@@ -1,0 +1,254 @@
+{
+  "Templare della Spada Sacra": {
+    "features": [
+      "**Classe Base:** Guerriero",
+      "**Dado Vita:** d10",
+      "**Competenze Primarie:** Forza, Costituzione",
+      "**Lama Benedetta (3° livello):** Le armi da mischia infliggono +1d4 danni radianti vs creature non fedeli all'Impero",
+      "**Aura di Rettitudine (7° livello):** Alleati entro 10 piedi hanno vantaggio ai tiri salvezza contro paura",
+      "**Giudizio Divino (10° livello):** 1/riposo breve, dichiara un nemico 'eretico' - attacchi critici su 19-20 contro di lui",
+      "**Martire Glorioso (15° livello):** Quando scendi a 0 PF, puoi fare un ultimo attacco con vantaggio prima di cadere"
+    ],
+    "culture": [
+      "Cresciuti nelle Fortezze-Monastero, dove disciplina fisica e spirituale si fondono, questi guerrieri servono come comandanti di guarnigione, cacciatori di eretici e guardie personali degli Ierarchi.",
+      "La loro formazione li rende tanto letali quanto devoti, ma alcuni iniziano a questionare se la violenza possa davvero essere sacra. Quando la fede vacilla, un Templare deve scegliere tra l'obbedienza cieca e la ricerca di una verità più profonda."
+    ],
+    "equipment": {
+      "weapons": "Spada lunga consacrata, Scudo con simboli sacri, Balestra leggera",
+      "armor": "Cotta di maglia benedetta, Mantello cerimoniale",
+      "tools": "Kit da soldato, Simbolo sacro, Libro di preghiere militari"
+    },
+    "roleplay": "I Templari sono divisi tra fede sincera e dubbi crescenti. Alcuni credono davvero nella missione sacra, altri iniziano a vedere le contraddizioni del sistema. La loro lealtà è costantemente messa alla prova tra obbedienza e coscienza."
+  },
+  "Cacciatore di Eretici": {
+    "features": [
+      "**Classe Base:** Ranger",
+      "**Dado Vita:** d10", 
+      "**Competenze Primarie:** Destrezza, Saggezza",
+      "**Nemico Prescelto (1° livello):** Eretici e Fuggitivi (+2 danni, vantaggio su Sopravvivenza per tracciarli)",
+      "**Terreno Favorito (1° livello):** Zone di Silenzio (doppia competenza in Furtività e Sopravvivenza)",
+      "**Marchio dell'Inquisizione (3° livello):** Puoi 'marcare' un bersaglio per 24 ore - sempre sai la sua direzione generale",
+      "**Caccia Implacabile (7° livello):** Una volta per riposo lungo, puoi muoverti a velocità doppia per 1 ora senza sfinimento"
+    ],
+    "culture": [
+      "Operano come esploratori solitari, guide per spedizioni punitive e infiltrati nei territori ribelli. La loro conoscenza delle aree di resistenza li pone in una posizione unica: sanno dove si nasconde la libertà, ma sono pagati per distruggerla.",
+      "Addestrati nelle terre selvagge ai confini dell'Impero, imparano a sopravvivere dove la Fede è debole, sviluppando una comprensione intima sia della natura che della natura umana. Alcuni finiscono per proteggere ciò che dovrebbero cacciare."
+    ],
+    "equipment": {
+      "weapons": "Arco lungo composito, Spada corta, Pugnali da lancio",
+      "armor": "Armatura di cuoio borchiato, Mantello mimetico",
+      "tools": "Kit da esploratore, Trappole, Corde e rampini, Mappa delle Zone di Silenzio"
+    },
+    "roleplay": "I Cacciatori vivono in costante conflitto morale. Conoscono intimamente le Zone di Silenzio e chi vi si rifugia, spesso sviluppando empatia per i fuggitivi che dovrebbero catturare. La loro lealtà è sempre in bilico."
+  },
+  "Ierarcha Supremo": {
+    "features": [
+      "**Classe Base:** Chierico",
+      "**Dado Vita:** d8",
+      "**Competenze Primarie:** Saggezza, Carisma",
+      "**Dominio dell'Ortodossia (1° livello):** Ottieni il dominio Ordine + uno a scelta. Gli incantesimi di dominio possono essere sostituiti con command, suggestion, geas",
+      "**Canalizzare Divinità: Sottomissione (2° livello):** Tutti i nemici entro 30 piedi devono fare TS Saggezza o essere charmati per 1 minuto",
+      "**Intervento Divino Controllato (10° livello):** Quando usi Intervento Divino, puoi scegliere l'effetto invece che lasciarlo al DM",
+      "**Avatar dell'Ordine (17° livello):** 1/riposo lungo, per 1 ora diventi un outsider celestiale con immunità ai danni fisici non magici"
+    ],
+    "culture": [
+      "Formati nel Seminario Supremo, dove teologia, politica e magia si fondono in un'unica disciplina di potere, rappresentano i vertici della gerarchia ecclesiastica, inquisitori supremi e teorici del controllo spirituale.",
+      "La loro posizione privilegiata li espone a verità che distruggerebbero la fede di chiunque altro. Alcuni scelgono la negazione, altri abbracciano il cinismo, ma alcuni iniziano a cercare un modo per servire davvero il divino invece che parodiarlo."
+    ],
+    "equipment": {
+      "weapons": "Mazza cerimoniale, Simbolo sacro come focus",
+      "armor": "Armatura a scaglie ornata, Mitra o copricapo religioso",
+      "tools": "Kit da sacerdote, Testi sacri, Incenso e oli benedetti, Sigillo dell'autorità"
+    },
+    "roleplay": "Gli Ierarchi sono spesso i più cinici o i più traumatizzati, avendo visto troppe verità scomode. Alcuni credono sinceramente di servire divinità benevolenti, altri sanno perfettamente di manipolare forze aberranti ma continuano per potere personale."
+  },
+  "Paladino della Purezza": {
+    "features": [
+      "**Classe Base:** Paladino",
+      "**Dado Vita:** d10",
+      "**Competenze Primarie:** Forza, Carisma", 
+      "**Giuramento di Purezza (3° livello):** Incantesimi speciali includono detect evil and good, zone of truth, dispel magic",
+      "**Aura di Purificazione (7° livello):** Tu e alleati entro 10 piedi siete immuni a charme e paura da creature 'impure'",
+      "**Punizione Purificatrice (3° livello):** Divine Smite infligge danni extra vs aberrazioni, demoni e 'corrotti'",
+      "**Campione della Fede (20° livello):** Trasformazione: ali di luce, immunità totale ai danni necrotici e psichici"
+    ],
+    "culture": [
+      "Campioni divini che incarnano gli ideali dell'Impero attraverso il potere sacro. Il loro giuramento li lega non solo alla divinità, ma alla struttura stessa del controllo imperiale.",
+      "Sono spesso i più devoti e anche i più pericolosi per il regime quando iniziano a dubitare. La loro purezza d'animo può portarli tanto alla cieca obbedienza quanto alla ribellione più determinata."
+    ],
+    "equipment": {
+      "weapons": "Spada lunga sacra, Scudo con emblemi divini",
+      "armor": "Corazza di piastre benedetta con incisioni sacre",
+      "tools": "Destriero da guerra, Kit da nobile, Reliquia sacra, Stendardo dell'ordine"
+    },
+    "roleplay": "I Paladini vivono il conflitto più intenso: il loro potere dipende dalla fede, ma cosa succede quando scoprono che la loro fede serve l'oppressione? Alcuni cadono, altri si riscattano trovando una causa più pura."
+  },
+  "Tessitore di Dogmi": {
+    "features": [
+      "**Classe Base:** Mago",
+      "**Dado Vita:** d6",
+      "**Competenze Primarie:** Intelligenza, Saggezza",
+      "**Scuola dell'Ortodossia (2° livello):** Specializzazione in Ammaliamento e Divinazione - incantesimi di controllo mentale costano un slot inferiore",
+      "**Rituali Sacri (2° livello):** Puoi eseguire incantesimi come rituali religiosi - durata raddoppiata, componenti verbali sostituibili con preghiere",
+      "**Conoscenza Filtrata (6° livello):** Competenza in Religione e Storia, ma solo versioni 'ortodosse' degli eventi",
+      "**Magia Teocratica (14° livello):** Gli incantesimi di charme e controllo hanno +2 alla CD del tiro salvezza contro 'infedeli'"
+    ],
+    "culture": [
+      "Maghi che hanno sottomesso la loro arte al servizio della fede imperiale. I loro incantesimi sono preghiere, i loro rituali cerimonie sacre, e la loro conoscenza è filtrata attraverso l'ortodossia.",
+      "Molti sono sinceramente devoti, credendo che la magia sia un dono divino da usare per il bene comune. Altri iniziano a sospettare che la vera conoscenza magica sia molto diversa da quella che gli è stata insegnata."
+    ],
+    "equipment": {
+      "weapons": "Bastone ornato con simboli sacri come focus arcano",
+      "armor": "Vesti religiose rinforzate",
+      "tools": "Libro degli incantesimi 'ortodossi', Componenti materiali benedetti, Kit da scriba, Sigilli arcani approvati"
+    },
+    "roleplay": "I Tessitori di Dogmi sono spesso studiosi frustrati, consapevoli che la loro conoscenza è limitata dall'ortodossia. La loro curiosità intellettuale è in costante conflitto con la dottrina imposta."
+  },
+  "Patto Oscuro": {
+    "features": [
+      "**Classe Base:** Warlock", 
+      "**Dado Vita:** d8",
+      "**Competenze Primarie:** Carisma, Costituzione",
+      "**Patrono Aberrante Mascherato (1° livello):** Il tuo patrono si presenta come una divinità imperiale, ma è un'entità aberrante",
+      "**Sussurri della Verità (1° livello):** Puoi comunicare telepaticamente con il patrono, che occasionalmente rivela verità scomode",
+      "**Benedizioni Corrotte (3° livello):** I tuoi incantesimi Warlock sembrano miracoli divini agli osservatori casuali",
+      "**Rivelazione Traumatica (14° livello):** Scopri la vera natura del tuo patrono - devi fare un TS Saggezza CD 15 o subire una forma di follia"
+    ],
+    "culture": [
+      "Coloro che hanno stretto patti con le vere forze che controllano l'Impero - entità aberranti mascherate da divinità. Alcuni lo sanno, altri credono sinceramente di servire il divino.",
+      "Sono spesso figure marginali nella società imperiale, temuti per i loro poteri strani ma tollerati per la loro utilità. La loro posizione precaria li rende sia preziosi informatori che potenziali traditori."
+    ],
+    "equipment": {
+      "weapons": "Arma del patto (spesso travestita da reliquia sacra)",
+      "armor": "Armatura di cuoio, Mantello con simboli nascosti del patrono",
+      "tools": "Focus arcano (mascherato da simbolo religioso), Grimoire segreto, Amuleti protettivi"
+    },
+    "roleplay": "I Warlock vivono una doppia vita costante. Quelli consapevoli della natura del loro patrono sono tormentati dal segreto, mentre quelli ignari potrebbero affrontare una crisi di fede devastante quando scoprono la verità."
+  },
+  "Benedetto dal Fato": {
+    "features": [
+      "**Classe Base:** Stregone",
+      "**Dado Vita:** d6", 
+      "**Competenze Primarie:** Carisma, Costituzione",
+      "**Origine Divina Apparente (1° livello):** La tua magia sembra provenire da benedizioni divine, nascondendo la vera origine",
+      "**Miracoli Spontanei (1° livello):** Puoi usare Metamagia per far sembrare i tuoi incantesimi miracoli improvvisi",
+      "**Favore Imperiale (6° livello):** Hai vantaggio sui tiri di Persuasione con funzionari imperiali che credono tu sia benedetto",
+      "**Potere Incontrollato (18° livello):** Quando usi Surge Magico, l'effetto sembra sempre 'divinamente guidato' anche se caotico"
+    ],
+    "culture": [
+      "Individui nati con poteri magici innati che l'Impero interpreta come 'favore divino'. Il loro potere grezzo viene canalizzato e controllato attraverso rituali di benedizione imperiali.",
+      "Sono spesso venerati come santi viventi dalle masse, ma tenuti sotto stretta sorveglianza dal clero che teme il loro potere incontrollato. La loro spontaneità magica è vista sia come dono che come potenziale minaccia."
+    ],
+    "equipment": {
+      "weapons": "Pugnale cerimoniale, Focus arcano (cristallo 'benedetto')",
+      "armor": "Vesti di seta ornate con ricami dorati",
+      "tools": "Simboli del favore divino, Pergamene con 'profezie', Gemme che 'amplificano' la benedizione"
+    },
+    "roleplay": "Gli Stregoni sono spesso confusi sulla natura del loro potere. Alcuni credono davvero di essere benedetti, altri sospettano che ci sia qualcosa di più profondo e potenzialmente pericoloso nella loro magia innata."
+  },
+  "Cantore della Propaganda": {
+    "features": [
+      "**Classe Base:** Bardo",
+      "**Dado Vita:** d8",
+      "**Competenze Primarie:** Carisma, Destrezza",
+      "**Collegio della Propaganda (3° livello):** Competenza doppia in Persuasione e Inganno, gli incantesimi di charme hanno +1 alla CD",
+      "**Ispirazione Ideologica (3° livello):** Ispirazione Bardica può anche rimuovere charme da 'eretici' o rafforzare la devozione nei fedeli",
+      "**Canzone dell'Obbedienza (6° livello):** Canti che inducono docilità - TS Saggezza o charme di massa",
+      "**Maestro della Persuasione (14° livello):** Puoi lanciare suggestion gratuitamente quando usi Contrattacco Tagliente"
+    ],
+    "culture": [
+      "Artisti e intrattenitori che diffondono la cultura imperiale attraverso canzoni, storie e spettacoli. Maestri della persuasione e della manipolazione emotiva delle masse.",
+      "Sono figure pubbliche amate dal popolo ma monitorate costantemente dalle autorità. La loro arte è insieme celebrata e censurata, creando una tensione costante tra espressione creativa e controllo politico."
+    ],
+    "equipment": {
+      "weapons": "Stocco elegante, Strumenti musicali 'approvati'",
+      "armor": "Abiti di scena elaborati, Maschera cerimoniale",
+      "tools": "Vari strumenti musicali, Kit da intrattenitore, Testi di canzoni 'ortodosse', Costumi teatrali"
+    },
+    "roleplay": "I Bardi camminano sul filo del rasoio tra arte e propaganda. Molti iniziano genuinamente devoti ma sviluppano dubbi man mano che vedono l'effetto della loro arte sulle masse. Altri si nascondono dietro performance ironiche."
+  },
+  "Monaco della Disciplina": {
+    "features": [
+      "**Classe Base:** Monaco",
+      "**Dado Vita:** d8",
+      "**Competenze Primarie:** Destrezza, Saggezza",
+      "**Via della Disciplina Sacra (3° livello):** I tuoi attacchi senz'armi infliggono danni radianti invece che contundenti vs 'impuri'",
+      "**Meditazione dell'Obbedienza (3° livello):** Durante i riposi brevi, puoi rimuovere charme da te stesso o alleati attraverso tecniche meditative",
+      "**Purezza del Corpo e Spirito (7° livello):** Immunità a malattie e veleni, resistenza ai danni psichici",
+      "**Illuminazione Controllata (17° livello):** Forma astrale può solo viaggiare in luoghi 'spiritualmente puri' approvati dall'Impero"
+    ],
+    "culture": [
+      "Monaci che hanno dedicato la loro disciplina fisica e spirituale al servizio dell'Impero. La loro meditazione è preghiera, il loro allenamento è devozione, la loro forza è fede incarnata.",
+      "Paradossalmente, la loro disciplina spirituale li rende tra i più resistenti al controllo mentale, creando un potenziale conflitto con l'ortodossia imperiale. Molti sviluppano una filosofia personale che può divergere dalla dottrina ufficiale."
+    ],
+    "equipment": {
+      "weapons": "Armi monastiche benedette (bastoni, nunchaku sacri)",
+      "armor": "Vesti monastiche semplici ma di alta qualità",
+      "tools": "Kit da meditazione, Incenso sacro, Pergamene di preghiere, Rosario benedetto"
+    },
+    "roleplay": "I Monaci sono spesso i più introspettivi e filosofici. La loro disciplina li porta a questionare profondamente la natura della fede e dell'obbedienza, rendendoli potenziali saggi o pericolosi liberi pensatori."
+  },
+  "Sussurratore delle Ombre": {
+    "features": [
+      "**Classe Base:** Ladro",
+      "**Dado Vita:** d8",
+      "**Competenze Primarie:** Destrezza, Intelligenza",
+      "**Archetipo dell'Infiltrato (3° livello):** Competenza doppia in Inganno e Furtività, puoi falsificare documenti imperiali",
+      "**Attacco Furtivo Silenzioso (3° livello):** I tuoi Attacchi Furtivi non fanno rumore se uccidono il bersaglio",
+      "**Rete di Informatori (9° livello):** Hai contatti in ogni grande città dell'Impero - informazioni costano la metà del normale",
+      "**Assassinio dell'Ombra (17° livello):** Se sorprendi una creatura, puoi tentare assassinio automatico con una prova di Destrezza"
+    ],
+    "culture": [
+      "Spie, assassini e infiltrati che operano nell'ombra per conto dell'Impero. Maestri dell'inganno e del sabotaggio, sono tanto temuti dai nemici quanto dai loro stessi superiori.",
+      "Vivono vite di solitudine e paranoia, mai sicuri di chi sia veramente dalla loro parte. La loro conoscenza dei segreti imperiali li rende preziosi ma anche estremamente pericolosi da tenere in vita."
+    ],
+    "equipment": {
+      "weapons": "Pugnali avvelenati, Balestra a mano silenziosa, Filo strangolatore",
+      "armor": "Armatura di cuoio imbottita per il silenzio",
+      "tools": "Kit da ladro, Kit da falsario, Veleni vari, Documenti falsi, Identità multiple"
+    },
+    "roleplay": "I Sussurratori sono maestri della paranoia e del doppio gioco. Molti finiscono per perdere il senso della propria vera identità, vivendo così tante bugie che dimenticano chi sono realmente."
+  },
+  "Guardiano della Natura Controllata": {
+    "features": [
+      "**Classe Base:** Druido",
+      "**Dado Vita:** d8",
+      "**Competenze Primarie:** Saggezza, Costituzione",
+      "**Circolo della Sottomissione Naturale (2° livello):** Puoi usare Forma Selvatica solo in creature 'approvate' dall'Impero (animali domestici, da fattoria, etc.)",
+      "**Natura Benedetta (2° livello):** Gli animali sotto il tuo controllo ottengono +1 AC e resistenza ai danni necrotici",
+      "**Comunione Controllata (6° livello):** Speak with Animals e Plants funziona solo con creature 'consacrate' dall'Impero",
+      "**Guardiano del Giardino Sacro (14° livello):** Puoi creare zone di natura 'purificata' dove la crescita è accelerata ma controllata"
+    ],
+    "culture": [
+      "Druidi che hanno accettato di servire l'Impero in cambio della 'protezione' della natura sotto il controllo imperiale. La loro connessione con la natura è filtrata attraverso la dottrina ecclesiastica.",
+      "Sono profondamente conflittuali: da un lato preservano la natura, dall'altro la sottomettono al controllo umano. Molti sviluppano una forma distorta di ambientalismo che giustifica la domesticazione totale dell'ambiente naturale."
+    ],
+    "equipment": {
+      "weapons": "Scimitarra di legno benedetto, Fronda con pietre consacrate",
+      "armor": "Armatura di cuoio di animali 'sacrificati volontariamente'",
+      "tools": "Kit da erborista, Semi benedetti, Focus druidico approvato, Manuale di flora imperiale"
+    },
+    "roleplay": "I Druidi vivono il conflitto tra natura selvaggia e natura controllata. Molti razionalizzano che servire l'Impero è il modo migliore per proteggere ciò che rimane del mondo naturale, ma alcuni iniziano a sentire la chiamata della vera wilderness."
+  },
+  "Convertito della Violenza": {
+    "features": [
+      "**Classe Base:** Barbaro",
+      "**Dado Vita:** d12",
+      "**Competenze Primarie:** Forza, Costituzione",
+      "**Ira Consacrata (1° livello):** Durante l'ira, i tuoi attacchi infliggono +1 danno radiante vs 'nemici della fede'",
+      "**Istinto Primitivo Guidato (3° livello):** Path of the Zealot - la tua furia è canalizzata verso obiettivi 'approvati'",
+      "**Resistenza alla Corruzione (6° livello):** Vantaggio ai TS contro charme e possessione durante l'ira",
+      "**Furia Evangelica (14° livello):** Quando entri in ira, i nemici entro 10 piedi devono fare TS Saggezza o essere spaventati"
+    ],
+    "culture": [
+      "Guerrieri primitivi 'civilizzati' dall'Impero e trasformati in strumenti di conquista. La loro furia selvaggia è stata canalizzata verso i nemici della fede, ma l'istinto primordiale rimane.",
+      "Sono spesso visti con sospetto dalle altre classi 'civilizzate', ma la loro efficacia in battaglia li rende preziosi. Il controllo sulla loro natura selvaggia è sempre precario, e alcuni riscoprono la libertà primitiva che avevano perduto."
+    ],
+    "equipment": {
+      "weapons": "Ascia da battaglia tribale benedetta, Giavellotti sacri",
+      "armor": "Pelle di animali consacrati, Ornamenti tribali 'approvati'",
+      "tools": "Trofei di guerra benedetti, Pitture corporee sacre, Tamburo da guerra rituale"
+    },
+    "roleplay": "I Barbari sono in costante lotta tra l'istinto selvaggio e l'indottrinamento imperiale. La loro natura primitiva è sia la loro forza che la loro debolezza, e molti oscillano tra fedeltà fanatica e ribellione istintiva."
+  }
+}

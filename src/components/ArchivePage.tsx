@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { getPageId } from "../utils/pageMapping";
+import { getChapterInfo, formatChapterInfo } from "../utils/chapterMapping";
+import { getRandomQuote, copyQuoteToClipboard } from "../utils/quotes";
+import type { Quote, ArchivePageProps } from "../types/archive";
 import "./ArchivePage.css";
 
 // Import delle icone SVG come immagini
 import BookRibbonIcon from "../assets/icons/book_ribbon.svg";
 import ContentCopyIcon from "../assets/icons/content_copy.svg";
 import RandomDiceIcon from "../assets/icons/random_dice.svg";
-
-interface Quote {
-  text: string;
-  source: string;
-}
-
-interface ArchivePageProps {
-  onContinueReading?: () => void;
-  lastVisitedPage?: string;
-}
 
 const ArchivePage: React.FC<ArchivePageProps> = ({
   onContinueReading,
@@ -27,40 +21,13 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
   const [showCopyNotification, setShowCopyNotification] = useState(false);
   const [isNotificationLeaving, setIsNotificationLeaving] = useState(false);
 
-  // Mock quotes con fonti - in futuro verrà da un file JSON
-  const quotes: Quote[] = [
-    {
-      text: "In Sanctus Dominium, la verità non libera: incatena chi la conosce al peso di dover scegliere.",
-      source: "Cardinale Matthias Vex, Codice delle Verità Proibite",
-    },
-    {
-      text: "Ogni preghiera è una catena dorata, ogni benedizione un controllo nascosto.",
-      source: "Inquisitore Caelum Mortis, Trattato sulla Fede Perfetta",
-    },
-    {
-      text: "L'Impero non conquista i corpi: seduce le anime e corrompe i cuori.",
-      source: "Secretum Imperialis, Capitolo VII",
-    },
-    {
-      text: "La libertà è il più pericoloso dei peccati, perché chi la conosce non può più fingere di essere felice.",
-      source: "Arcivescovo Silanus, Sermoni sulla Salvezza Necessaria",
-    },
-    {
-      text: "Nel nome della salvezza, anche l'amore diventa arma di controllo.",
-      source: "Dottrina Sancta, Volume III",
-    },
-    {
-      text: "I veri tiranni non si proclamano tali: si fanno chiamare salvatori.",
-      source: "Anonymus, Libellus Resistentiae",
-    },
-  ];
-
+  // Carica citazione casuale all'avvio
   useEffect(() => {
-    // Seleziona una citazione casuale all'avvio
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    const randomQuote = getRandomQuote();
     setCurrentQuote(randomQuote);
   }, []);
 
+  // Gestisce il click su "Continua lettura"
   const handleContinueReading = () => {
     if (onContinueReading) {
       onContinueReading();
@@ -69,31 +36,33 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
     }
   };
 
+  // Genera una nuova citazione casuale
   const handleNewQuote = () => {
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    const randomQuote = getRandomQuote();
     setCurrentQuote(randomQuote);
   };
 
-  const handleCopyQuote = () => {
-    const fullQuote = `"${currentQuote.text}"\n— ${currentQuote.source}`;
-    navigator.clipboard
-      .writeText(fullQuote)
-      .then(() => {
-        setShowCopyNotification(true);
-        setIsNotificationLeaving(false);
+  // Copia citazione negli appunti con notifica
+  const handleCopyQuote = async () => {
+    const success = await copyQuoteToClipboard(currentQuote);
 
+    if (success) {
+      setShowCopyNotification(true);
+      setIsNotificationLeaving(false);
+
+      setTimeout(() => {
+        setIsNotificationLeaving(true);
         setTimeout(() => {
-          setIsNotificationLeaving(true);
-          setTimeout(() => {
-            setShowCopyNotification(false);
-            setIsNotificationLeaving(false);
-          }, 300); // Tempo per completare l'animazione di uscita
-        }, 2000);
-      })
-      .catch((err) => {
-        console.error("Errore nella copia:", err);
-      });
+          setShowCopyNotification(false);
+          setIsNotificationLeaving(false);
+        }, 300);
+      }, 2000);
+    }
   };
+
+  // Calcola informazioni capitolo per l'ultima pagina visitata
+  const lastPageId = getPageId(lastVisitedPage);
+  const chapterInfo = getChapterInfo(lastPageId);
 
   return (
     <div className="archive-page">
@@ -154,7 +123,6 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
           <div className="continue-card">
             <div className="continue-header">
               <span className="continue-label">Ultima sessione</span>
-              <span className="session-date">2 ore fa</span>
             </div>
             <button className="continue-button" onClick={handleContinueReading}>
               <div className="continue-content">
@@ -166,10 +134,12 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
                   <div className="progress-bar">
                     <div
                       className="progress-fill"
-                      style={{ width: "65%" }}
+                      style={{ width: `${chapterInfo.progress}%` }}
                     ></div>
                   </div>
-                  <span className="progress-text">Capitolo 3 di 8</span>
+                  <span className="progress-text">
+                    {formatChapterInfo(chapterInfo)}
+                  </span>
                 </div>
               </div>
               <div className="continue-arrow">

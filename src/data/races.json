@@ -1,0 +1,56 @@
+{
+  "header": {
+    "chapterBadge": "Capitolo 1 - Parte 2",
+    "title": "Razze sotto il giogo",
+    "subtitle": "Le stirpi plasmate dall'Impero di Sanctus Dominium"
+  },
+  "introduction": {
+    "title": "Le stirpi dell'Impero",
+    "content": [
+      "L'Impero di Sanctus Dominium non ha semplicemente conquistato razze preesistenti: **ne ha create di nuove**, plasmando l'umanità e altre forme di vita attraverso secoli di manipolazione spirituale, esperimenti teurgici e selezione controllata.",
+      "Sei sono le stirpi principali che popolano questo mondo di devozione forzata, ognuna modellata per servire uno specifico ruolo nell'architettura del controllo imperiale."
+    ]
+  },
+  "races": [
+    {
+      "name": "I Devoti",
+      "subtitle": "I Figli Perfetti",
+      "description": "Umani 'perfezionati' attraverso otto generazioni di selezione spirituale controllata. Nascono già predisposti all'obbedienza, con una struttura mentale che trova gioia naturale nella sottomissione. La loro pelle ha una leggera luminescenza dorata e i loro occhi cambiano colore in base al livello di 'purezza spirituale'.",
+      "icon": "crown"
+    },
+    {
+      "name": "Le Candele Viventi", 
+      "subtitle": "I Servitori di Cera",
+      "description": "Costrutti umanoidi creati dalla cera di mille candele benedette, animati dalla Fiamma Eterna della Fede. Il loro corpo traslucido contiene uno stoppino che arde costantemente nel loro petto, consumandoli lentamente ma inesorabilmente in 50 anni di vita.",
+      "icon": "candle"
+    },
+    {
+      "name": "I Santificati",
+      "subtitle": "I Morti Beati",
+      "description": "Non-morti 'benedetti' che hanno trasceso la morte attraverso rituali imperiali. Mantengono perfettamente la loro personalità e ricordi, ma sono legati magicamente all'obbedienza verso l'Impero. Rappresentano l'immortalità come ricompensa per la devozione assoluta.",
+      "icon": "skull"
+    },
+    {
+      "name": "I Sussurranti",
+      "subtitle": "I Messaggeri Silenziosi", 
+      "description": "Umani modificati magicamente per comunicare solo attraverso telepatia limitata. Privati della voce fisica, sviluppano capacità psichiche che li rendono messaggeri perfetti per l'Impero. La loro bocca è sigillata da simboli dorati che brillano quando usano i loro poteri.",
+      "icon": "whisper"
+    },
+    {
+      "name": "I Ricordanti",
+      "subtitle": "I Custodi della Memoria",
+      "description": "Biblioteca viventi create fondendo anime umane con spiriti di libri antichi. Possiedono memoria perfetta e accesso a conoscenze dimenticate, ma sono tormentati dal peso di ricordare tutto, comprese le verità che l'Impero preferisce nascondere.",
+      "icon": "book"
+    },
+    {
+      "name": "Gli Spezzati",
+      "subtitle": "I Ribelli Nati",
+      "description": "Individui che hanno subito il fallimento catastrofico del condizionamento imperiale. Invece di diventare devoti, hanno sviluppato una resistenza naturale a ogni forma di controllo mentale, ma al costo di una stabilità psicologica frammentata. Rappresentano la prova vivente che il sistema può fallire.",
+      "icon": "broken_chain"
+    }
+  ],
+  "dmNote": {
+    "title": "Nota per il DM",
+    "content": "Ogni razza rappresenta una diversa risposta al controllo totalitario: accettazione programmata, sacrificio volontario, immortalità condizionata, comunicazione controllata, memoria manipolata, e resistenza a tutti i costi. I conflitti tra queste filosofie di sopravvivenza guidano naturalmente il gioco di ruolo."
+  }
+}

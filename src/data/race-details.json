@@ -1,0 +1,138 @@
+{
+  "I Devoti": {
+    "traits": [
+      "**Aumento Caratteristiche:** +2 Saggezza, +1 Carisma",
+      "**Velocità:** 9 metri",
+      "**Linguaggi:** Comune, Sanctus, Devotus",
+      "**Obbedienza Istintiva:** Vantaggio ai tiri salvezza contro paura quando ricevi ordini da figure di autorità",
+      "**Aura di Purezza:** I non morti devono superare un TS Saggezza CD 8+mod. Carisma per avvicinarsi entro 10 piedi",
+      "**Dogma Interiore:** Conosci automaticamente quando qualcuno mente su questioni religiose",
+      "**Fragilità dell'Anima:** Svantaggio ai tiri salvezza contro charme, ma immunità agli effetti che causano follia",
+      "**Crisi di Fede:** Se commetti un atto contro i dogmi imperiali, subisci 1 livello di sfinimento fino alla confessione"
+    ],
+    "culture": [
+      "I Devoti rappresentano l'evoluzione umana ideale secondo l'Impero, modelli da replicare in tutto il territorio. Vivono in uno stato di beatitudine artificiale, genuinamente felici della loro condizione programmata.",
+      "Le altre razze li vedono come bambole viventi prive di vera personalità, mentre gli studiosi li osservano come esperimenti riusciti, forse troppo bene. La loro pelle luminescente e gli occhi che cambiano colore li rendono facilmente riconoscibili."
+    ],
+    "names": {
+      "male": "Pius, Sanctus, Devotus, Benedictus, Pureus",
+      "female": "Sancta, Pia, Benedicta, Purea, Devota",
+      "surnames": "Luminous, Goldeneye, Trueword, Faithborn, Blessed"
+    },
+    "relations": "Occupano il vertice della gerarchia sociale come ideale umano perfezionato. Programmati per la purezza, provano disgusto istintivo verso i Ricordanti e la loro conoscenza \"contaminata\". Spesso cercano alleanza con i Santificati in crisi di fede, creando legami basati sulla disillusione condivisa."
+  },
+  "Le Candele Viventi": {
+    "traits": [
+      "**Aumento Caratteristiche:** +2 Costituzione, +1 Saggezza",
+      "**Velocità:** 9 metri",
+      "**Linguaggi:** Comune, Luminis (comunicazione di luce)",
+      "**Corpo di Cera:** Resistenza al danno da freddo, vulnerabilità al danno da fuoco",
+      "**Fiamma Interiore:** Emani luce fioca in un raggio di 5 piedi, luce debole per altri 5 piedi",
+      "**Comunicazione Luminosa:** Puoi comunicare emozioni e concetti semplici modulando la tua luce",
+      "**Sacrificio Graduale:** Ogni anno di vita, i tuoi PF massimi diminuiscono di 2 (non recuperabili)",
+      "**Ultima Luce:** Quando muori, esplodi in luce accecante (come daylight) per 1 minuto",
+      "**Immunità Costrutti:** Non hai bisogno di mangiare, bere o respirare. Immunità a veleni e malattie"
+    ],
+    "culture": [
+      "Sono mute per natura e comunicano solo attraverso il colore e l'intensità della loro fiamma interiore. Il clero li venera come incarnazioni pure del sacrificio divino, mentre le altre razze li considerano tragiche vittime di una teologia crudele.",
+      "Tra di loro si riconoscono come fratelli destinati allo stesso luminoso destino, accettando serenamente la loro natura effimera. Vivono sapendo che ogni giorno li avvicina al \"completamento del sacrificio\"."
+    ],
+    "names": {
+      "male": "Lumis, Candor, Flamma, Cera, Ardor",
+      "female": "Lumina, Fiammetta, Cerula, Lucida",
+      "surnames": "Il/La + [colore della fiamma] (es. \"Lumis l'Azzurro\", \"Fiammetta la Dorata\")"
+    },
+    "relations": "Sono venerate come servitori sacri destinati al sacrificio volontario. Trovano comprensione negli Spezzati, entrambi accomunati dall'accettazione di un destino tragico ma diverso. Il loro sacrificio programmato le rende simboli di devozione per tutto l'Impero."
+  },
+  "I Santificati": {
+    "traits": [
+      "**Aumento Caratteristiche:** +2 Carisma, +1 Costituzione",
+      "**Velocità:** 9 metri",
+      "**Linguaggi:** Comune, Sanctus, Mortis",
+      "**Falsa Vita:** Appari vivo a tutti gli effetti. Detect undead richiede CD 18 per identificarti",
+      "**Immunità dei Morti:** Immunità a veleni, malattie, e incantesimi che influenzano solo i vivi",
+      "**Aura di Santità:** Vantaggio alle prove di Persuasione con credenti devoti",
+      "**Fame Spirituale:** Devi \"nutrirti\" di atti di fede altrui. Senza assistere a preghiere per una settimana, guadagni 1 livello di sfinimento",
+      "**Rivelazione Traumatica:** Se scopri la tua vera natura, devi superare un TS Saggezza CD 15 o guadagnare una forma di follia",
+      "**Benedizione Corrotta:** 1/riposo lungo, puoi usare sanctuary su te stesso"
+    ],
+    "culture": [
+      "Spesso occupano posizioni di prestigio perché la loro falsa santità è molto convincente. Il popolo li venera come santi viventi ed esempi di purezza spirituale, ignaro della loro vera natura di non morti.",
+      "Solo un esame magico può rivelare la loro condizione. Il clero superiore li usa come propaganda ambulante, consapevole della loro vera natura ma mantenendo il segreto per sfruttare il loro effetto sui fedeli."
+    ],
+    "names": {
+      "male": "Santo Marcus, Beato Gaius, Venerabile Aurelius",
+      "female": "Santa Livia, Beata Claudia, Venerabile Octavia",
+      "surnames": "Titoli: Santo/Santa, Beato/Beata, Venerabile + nome umano conservato"
+    },
+    "relations": "Seguono i Devoti nella gerarchia, pur essendo morti mantengono un'aura di santità convincente. Temono i Sussurranti, la cui natura paranormale potrebbe rivelare la loro vera natura di non morti. Spesso manipolano la loro posizione per proteggere altre razze oppresse."
+  },
+  "I Sussurranti": {
+    "traits": [
+      "**Aumento Caratteristiche:** +2 Intelligenza, +1 Saggezza",
+      "**Velocità:** 9 metri",
+      "**Linguaggi:** Comune, Mentalis (telepatico), Silentia",
+      "**Comunicazione Telepatica:** Puoi comunicare telepaticamente con qualsiasi creatura entro 60 piedi che conosci una lingua",
+      "**Rete Mentale:** Quando più Sussurranti sono entro 1 miglio l'uno dall'altro, possono formare una rete di comunicazione istantanea",
+      "**Silenzio Vocale:** Svantaggio a tutte le prove che richiedono comunicazione vocale ad alta voce",
+      "**Resistenza Psichica:** Vantaggio ai tiri salvezza contro incantesimi che leggono o influenzano la mente",
+      "**Evasione Sorveglianza:** Le Pietre della Vigilanza hanno svantaggio nel monitorare le tue comunicazioni telepatiche",
+      "**Sovraccarico Mentale:** Se subisci danni psichici, tutti i Sussurranti entro 30 piedi subiscono 1 danno psichico"
+    ],
+    "culture": [
+      "Generazioni di paranoia hanno modificato la loro fisiologia: le corde vocali atrofizzate e cervelli ipertrofizzati. Quando sono costretti a parlare ad alta voce, la loro voce è un sussurro rauco e doloroso.",
+      "Le autorità li considerano cospiratori naturali e minacce alla sorveglianza, mentre la resistenza li considera alleati perfetti. Il popolo comune li trova inquietanti, temendo la loro capacità di \"sentire i pensieri\"."
+    ],
+    "names": {
+      "male": "Silens, Tacitus, Mentis, Psyc",
+      "female": "Silenta, Tacita, Mente, Psycha",
+      "surnames": "Echi, Sussurro, Pensiero, Ombra-Mente"
+    },
+    "relations": "Sono tollerati ma costantemente sorvegliati per la loro natura evasiva. Collaborano naturalmente con i Ricordanti, combinando comunicazione sicura e conoscenza storica. Le autorità li considerano minacce alla sorveglianza imperiale."
+  },
+  "I Ricordanti": {
+    "traits": [
+      "**Aumento Caratteristiche:** +2 Intelligenza, +1 Saggezza",
+      "**Velocità:** 9 metri",
+      "**Linguaggi:** Comune, Memorialis, Hereticus",
+      "**Memoria Ancestrale:** Competenza in Storia e una abilità artigianale a scelta",
+      "**Archivio Mentale:** 1/riposo lungo, puoi fare una prova di Intelligenza CD 15 per ricordare qualsiasi fatto storico pre-Impero",
+      "**Eco del Passato:** Puoi lanciare legend lore 1/settimana senza componenti materiali, ma solo su eventi precedenti all'Impero",
+      "**Sovraccarico Mnemonico:** Quando fallisci un tiro salvezza contro charme, subisci anche 1d4 danni psichici per il conflitto tra memorie vere e false",
+      "**Sussurri Notturni:** Durante i riposi lunghi, chi dorme entro 30 piedi da te può sognare frammenti di storia vera"
+    ],
+    "culture": [
+      "Sono i discendenti di bibliotecari, storici e saggi che hanno nascosto la vera storia del mondo nelle loro stesse menti prima della Grande Purificazione. La loro memoria è perfetta, ma il peso di ricordare tutto li rende spesso malinconici.",
+      "Hanno occhi color argento che sembrano contenere infinite profondità e spesso sussurrano nel sonno, recitando frammenti di testi perduti. Tra di loro si riconoscono come custodi di un fardello troppo pesante per una sola mente."
+    ],
+    "names": {
+      "male": "Memorius Custode, Scripta Archivista, Historicus Cronista",
+      "female": "Memoria Ricordatrice, Scriptura Custode, Historica Archivista",
+      "surnames": "Custode, Ricordatore, Archivista, Cronista"
+    },
+    "relations": "Vivono in una posizione precaria: sono eretici dichiarati, ma la loro utilità come archivi viventi li protegge. Sono considerati tesori inestimabili dalla resistenza, chiavi per recuperare il passato perduto. L'Inquisizione li considera eretici viventi da interrogare ed epurare."
+  },
+  "Gli Spezzati": {
+    "traits": [
+      "**Aumento Caratteristiche:** +1 a tre caratteristiche diverse (scegli al momento della creazione)",
+      "**Velocità:** 9 metri",
+      "**Linguaggi:** Comune, Fragmentis, due linguaggi aggiuntivi",
+      "**Personalità Multiple:** Hai 3-6 personalità distinte. Puoi cambiare personalità con un'azione, ottenendo competenza in abilità diverse",
+      "**Immunità Totale:** Immunità completa a charme, dominazione, lettura del pensiero e qualsiasi forma di controllo mentale",
+      "**Genio Frammentato:** 1/riposo lungo, puoi aggiungere doppio bonus competenza a una prova di abilità",
+      "**Instabilità Mentale:** All'inizio di ogni giorno, tira 1d6. Con 1, cambi personalità involontariamente durante la giornata",
+      "**Insight Caotico:** Vantaggio alle prove per riconoscere illusioni e inganni, ma svantaggio alle prove sociali con persone \"normali\"",
+      "**Risonanza Spezzata:** Altri Spezzati entro 30 piedi non possono essere sorpresi se tu non lo sei"
+    ],
+    "culture": [
+      "Sono vittime di esperimenti falliti di controllo mentale, sopravvissuti il cui spirito si è frantumato in multipli frammenti di personalità. I loro occhi cambiano colore a seconda della personalità dominante del momento.",
+      "Nonostante la loro instabilità, sono spesso geniali in modi imprevedibili. Gli psico-maghi li considerano fallimenti affascinanti da studiare o eliminare, mentre la resistenza li venera come guerrieri immuni perfetti contro il controllo mentale."
+    ],
+    "names": {
+      "male": "Uno/Marcus/Daemon, Tre/Gaius/Chaos",
+      "female": "Due/Livia/Umbra, Quattro/Clara/Tempest",
+      "surnames": "Frantume, Mille-Voci, Caos, Eco-Perduto"
+    },
+    "relations": "Rappresentano il gradino più basso, considerati rifiuti da nascondere o eliminare. Sopravvivono solo grazie alla loro capacità di sfuggire al controllo mentale. La società li teme come pazzi pericolosi, ma la resistenza li venera come guerrieri immuni perfetti."
+  }
+}

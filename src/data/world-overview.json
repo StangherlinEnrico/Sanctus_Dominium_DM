@@ -1,0 +1,93 @@
+{
+  "header": {
+    "chapterBadge": "Capitolo 1 - Parte 1",
+    "title": "Un mondo di devozione forzata",
+    "subtitle": "Panoramica dell'ambientazione e temi centrali di Sanctus Dominium"
+  },
+  "introduction": {
+    "title": "Il mondo che fu perduto",
+    "content": [
+      "**Sanctus Dominium** è un mondo dove la libertà è solo un ricordo sussurrato nelle ombre. Quello che un tempo era un continente di regni diversi e culture fiorenti è ora un impero unificato sotto il controllo totale della _Ecclesia Sancta_, una teocrazia che ha perfezionato l'arte del dominio spirituale.",
+      "Non si tratta di una tirannia brutale che governa con la paura, ma di qualcosa di molto più insidioso: **un sistema che rende la sottomissione desiderabile**. I cittadini non sono oppressi - sono _benedetti_. Non sono schiavi - sono _protetti_. La ribellione non è punita - è _curata_."
+    ]
+  },
+  "themes": [
+    {
+      "icon": "brain",
+      "title": "Controllo mentale",
+      "description": "La vera arma dell'Impero non sono le spade, ma le **benedizioni**. Rituali quotidiani che alterano sottilmente il pensiero, rendendo la conformità naturale e la ribellione impensabile."
+    },
+    {
+      "icon": "church",
+      "title": "Fede pervertita",
+      "description": "La religione è stata trasformata in strumento di oppressione. Ogni preghiera rafforza il controllo, ogni sacramento lega più strettamente all'Impero."
+    },
+    {
+      "icon": "theater_comedy",
+      "title": "Doppia faccia",
+      "description": "Nulla è come sembra. I salvatori sono tiranni, la protezione è prigionia, la pace è morte spirituale. La verità si nasconde dietro maschere di benevolenza."
+    },
+    {
+      "icon": "mystery",
+      "title": "Segreti sepolti",
+      "description": "La storia è stata riscritta, la memoria collettiva manipolata. Scoprire la verità sul passato significa rischiare tutto per un futuro incerto."
+    }
+  ],
+  "trinity": {
+    "title": "La Trinità del Potere",
+    "description": "L'Impero è governato da tre istituzioni che si bilanciano e si controllano a vicenda, creando un sistema di potere tanto efficace quanto terrificante:",
+    "branches": [
+      {
+        "title": "L'Altare",
+        "role": "Gerarchia Ecclesiastica", 
+        "description": "Controlla la dottrina, i rituali e la vita spirituale. Decide cosa è sacro e cosa è peccaminoso, plasmando la realtà attraverso l'interpretazione divina."
+      },
+      {
+        "title": "La Spada",
+        "role": "Braccio Militare e Inquisizione",
+        "description": "Mantiene l'ordine e punisce l'eresia. Non attraverso la violenza brutale, ma attraverso la \"correzione misericordiosa\" e la rieducazione."
+      },
+      {
+        "title": "La Bilancia", 
+        "role": "Amministrazione e Controllo",
+        "description": "Gestisce la burocrazia, l'economia e la vita quotidiana. Ogni aspetto dell'esistenza è regolamentato e ottimizzato per il \"bene comune\"."
+      }
+    ]
+  },
+  "campaignThemes": [
+    {
+      "question": "Cosa significa essere liberi?",
+      "description": "In un mondo dove la felicità è garantita ma la scelta è un'illusione, i personaggi devono confrontarsi con domande fondamentali sulla natura della libertà e del libero arbitrio."
+    },
+    {
+      "question": "Il prezzo della sicurezza",
+      "description": "L'Impero offre sicurezza, prosperità e pace in cambio dell'autonomia personale. I personaggi devono decidere se vale la pena lottare per qualcosa che potrebbero perdere."
+    },
+    {
+      "question": "Verità vs Felicità",
+      "description": "Se scoprire la verità porta solo sofferenza, è meglio rimanere nell'ignoranza felice? Questo dilemma attraversa ogni aspetto della vita nel Sanctus Dominium."
+    }
+  ],
+  "dmGuidance": {
+    "title": "Consigli per il Dungeon Master",
+    "intro": "Condurre una campagna in Sanctus Dominium richiede un approccio sottile. Non si tratta di combattere mostri, ma di confrontarsi con sistemi di oppressione psicologica.",
+    "principles": [
+      {
+        "title": "La sottile oppressione",
+        "description": "Il controllo non è mai esplicito. È nascosto dietro gentilezza, tradizione e \"buone intenzioni\"."
+      },
+      {
+        "title": "Conseguenze morali",
+        "description": "Ogni azione ha un costo etico. Ogni vittoria dovrebbe costare qualcosa."
+      },
+      {
+        "title": "Il nemico è invisibile",
+        "description": "Il vero antagonista non è una persona ma un sistema. Anche i \"cattivi\" credono sinceramente di fare del bene."
+      },
+      {
+        "title": "La normalità è terrificante", 
+        "description": "Il vero orrore sta nella quotidianità del controllo, non in eventi drammatici."
+      }
+    ]
+  }
+}
