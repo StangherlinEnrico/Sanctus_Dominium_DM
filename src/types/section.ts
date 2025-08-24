@@ -20,6 +20,13 @@ export interface InfoBox {
   severity: "danger" | "warning" | "info" | "success";
 }
 
+// Tipi per le azioni
+export interface ContentBoxAction {
+  type: "popupOpener";
+  label?: string; // Testo personalizzabile per l'indicatore
+  // Possibilità di espansione futura per altri tipi di azione
+}
+
 export interface ContentBox {
   type: "contentBox";
   svgIcon?: string;
@@ -28,6 +35,7 @@ export interface ContentBox {
   content: string;
   tag?: string;
   additionalInfo?: string[];
+  action?: ContentBoxAction;
 }
 
 export interface GridSection {

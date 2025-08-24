@@ -37,8 +37,39 @@ const ContentBox: React.FC<ContentBoxProps> = ({ data }) => {
     loadSvgIcon();
   }, [data.svgIcon]);
 
+  // Gestione del click in base al tipo di azione
+  const handleClick = () => {
+    if (!data.action) return;
+
+    switch (data.action.type) {
+      case "popupOpener":
+        alert(data.title);
+        break;
+      default:
+        console.warn(`Tipo di azione non supportato: ${data.action.type}`);
+    }
+  };
+
+  // Determina se il componente è clickabile
+  const isClickable = !!data.action;
+
   return (
-    <div className="content-box">
+    <div
+      className={`content-box ${isClickable ? "content-box--clickable" : ""}`}
+      onClick={isClickable ? handleClick : undefined}
+      role={isClickable ? "button" : undefined}
+      tabIndex={isClickable ? 0 : undefined}
+      onKeyDown={
+        isClickable
+          ? (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                handleClick();
+              }
+            }
+          : undefined
+      }
+    >
       {/* Tag in alto a destra */}
       {data.tag && <div className="content-box__tag">{data.tag}</div>}
 
@@ -75,6 +106,15 @@ const ContentBox: React.FC<ContentBoxProps> = ({ data }) => {
               />
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* Indicatore azione sempre visibile */}
+      {isClickable && data.action && (
+        <div className="content-box__action-indicator">
+          <span className="content-box__action-text">
+            {data.action.label || "Clicca per ulteriori dettagli"}
+          </span>
         </div>
       )}
     </div>
