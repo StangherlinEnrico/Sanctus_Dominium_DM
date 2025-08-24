@@ -7,6 +7,8 @@ import PageHeader from "./PageHeader";
 import DownloadButton from "./DownloadButton";
 import TextSection from "./TextSection";
 import InfoBox from "./InfoBox";
+import ContentBox from "./ContentBox";
+import GridSection from "./GridSection";
 import "./WorldOverviewPage.css";
 import "../styles/global-scrollbar.css";
 
@@ -25,6 +27,10 @@ const WorldOverviewPage: React.FC = () => {
         return <TextSection key={index} data={section} />;
       case "infoBox":
         return <InfoBox key={index} data={section} />;
+      case "contentBox":
+        return <ContentBox key={index} data={section} />;
+      case "gridSection":
+        return <GridSection key={index} data={section} />;
       default:
         return null;
     }
