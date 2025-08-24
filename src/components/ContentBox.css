@@ -14,7 +14,7 @@
   border: 2px solid var(--copper-dark);
   border-radius: 16px;
   padding: 32px;
-  margin-bottom: 48px;
+  margin-bottom: 16px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   position: relative;
