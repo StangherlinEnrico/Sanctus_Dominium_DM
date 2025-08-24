@@ -7,5 +7,50 @@
     "svgIcon": "../assets/icons/globe.svg",
     "title": "Un mondo di devozione forzata",
     "subtitle": "Panoramica dell'ambientazione e temi centrali di Sanctus Dominium"
-  }
+  },
+  "sections": [
+    {
+      "type": "textSection",
+      "title": "Un mondo caduto nell'ombra",
+      "content": "Dove un tempo fiorivano le diverse culture del continente, ora regna una pace inquietante. Le città prosperano, i commerci fioriscono, i cittadini sorridono mentre recitano le loro preghiere quotidiane. Ma sotto questa facciata di prosperità si nasconde una verità più oscura: **la libertà è morta non con la violenza, ma con l'accettazione**. Ogni strada è sorvegliata, ogni pensiero è guidato, ogni sogno è canalizzato verso il \"bene comune\". In questo mondo, la vera ribellione non consiste nel brandire una spada, ma nel **ricordare cosa significhi essere veramente liberi**."
+    },
+    {
+      "type": "infoBox",
+      "svgIcon": "../assets/icons/brain.svg",
+      "title": "Controllo mentale",
+      "content": "La vera arma dell'Impero non sono le spade, ma le **benedizioni**. Rituali quotidiani che alterano sottilmente il pensiero, rendendo la conformità naturale e la ribellione impensabile.",
+      "severity": "danger"
+    },
+    {
+      "type": "infoBox",
+      "svgIcon": "../assets/icons/church.svg",
+      "title": "Fede pervertita",
+      "content": "La religione è stata trasformata in strumento di oppressione. Ogni preghiera rafforza il controllo, ogni sacramento lega più strettamente all'Impero.",
+      "severity": "warning"
+    },
+    {
+      "type": "textSection",
+      "title": "L'arte della sottomissione gentile",
+      "content": "L'**Ecclesia Sancta** ha perfezionato una forma di controllo che non spezza gli spiriti, ma li _plasma_. Non esistono catene visibili, solo benedizioni quotidiane che alterano sottilmente la mente. Non ci sono prigioni per i dissidenti, ma _centri di rieducazione spirituale_ dove vengono \"guariti\" dalla malattia del dubbio. Il regime ha compreso una verità fondamentale: **un popolo che sceglie la propria sottomissione non si ribellerà mai**."
+    },
+    {
+      "type": "infoBox",
+      "svgIcon": "../assets/icons/theater_comedy.svg",
+      "title": "Doppia faccia",
+      "content": "Nulla è come sembra. I salvatori sono tiranni, la protezione è prigionia, la pace è morte spirituale. La verità si nasconde dietro maschere di benevolenza.",
+      "severity": "info"
+    },
+    {
+      "type": "infoBox",
+      "svgIcon": "../assets/icons/mystery.svg",
+      "title": "Segreti sepolti",
+      "content": "La storia è stata riscritta, la memoria collettiva manipolata. Scoprire la verità sul passato significa rischiare tutto per un futuro incerto.",
+      "severity": "success"
+    },
+    {
+      "type": "textSection", 
+      "title": "Il prezzo della pace eterna",
+      "content": "Oggi, nelle strade dell'Impero, regna una pace perfetta. Non ci sono guerre, non ci sono rivolte, non ci sono crimini. I cittadini vivono vite ordinate, produttive, _significative_. Ma questa pace ha un prezzo che pochi osano riconoscere: **l'anima stessa dell'umanità**. In questo mondo dove ogni lacrima viene asciugata da mani amorevoli e ogni dubbio viene dissolto da parole sagge, dove ogni dolore viene alleviato da rituali benedetti, rimane una sola domanda terrificante: _cosa resta dell'essere umano quando gli si toglie il diritto di soffrire, di dubitare, di scegliere il proprio destino?_"
+    }
+  ]
 }

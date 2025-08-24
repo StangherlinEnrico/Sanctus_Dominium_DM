@@ -1,0 +1,213 @@
+/* CSS Variables già definite nel progetto principale */
+:root {
+  --copper-primary: #b87333;
+  --copper-light: #daa520;
+  --copper-dark: #8b4513;
+  --text-primary: #e0e0e0;
+  --text-secondary: #c0c0c0;
+  --text-muted: #a0a0a0;
+  
+  /* Severity Colors */
+  --danger-primary: #dc3545;
+  --danger-bg: rgba(220, 53, 69, 0.1);
+  --warning-primary: #fd7e14;
+  --warning-bg: rgba(253, 126, 20, 0.1);
+  --info-primary: #0dcaf0;
+  --info-bg: rgba(13, 202, 240, 0.1);
+  --success-primary: #198754;
+  --success-bg: rgba(25, 135, 84, 0.1);
+}
+
+/* Info Box Container */
+.info-box {
+  background: rgba(15, 15, 15, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  backdrop-filter: blur(10px);
+  border-left: 4px solid var(--copper-primary);
+}
+
+/* Severity Variants */
+.info-box--danger {
+  border-left-color: var(--danger-primary);
+  background: var(--danger-bg);
+}
+
+.info-box--warning {
+  border-left-color: var(--warning-primary);
+  background: var(--warning-bg);
+}
+
+.info-box--info {
+  border-left-color: var(--info-primary);
+  background: var(--info-bg);
+}
+
+.info-box--success {
+  border-left-color: var(--success-primary);
+  background: var(--success-bg);
+}
+
+/* Hover Effects */
+.info-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info-box--danger:hover {
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.2);
+}
+
+.info-box--warning:hover {
+  box-shadow: 0 6px 20px rgba(253, 126, 20, 0.2);
+}
+
+.info-box--info:hover {
+  box-shadow: 0 6px 20px rgba(13, 202, 240, 0.2);
+}
+
+.info-box--success:hover {
+  box-shadow: 0 6px 20px rgba(25, 135, 84, 0.2);
+}
+
+/* Header */
+.info-box__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.info-box__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box__svg-icon {
+  width: 28px;
+  height: 28px;
+  transition: filter 0.3s ease;
+}
+
+/* Icon Colors per Severity */
+.info-box--danger .info-box__svg-icon {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(93%) saturate(1752%) hue-rotate(334deg) brightness(87%) contrast(86%);
+}
+
+.info-box--warning .info-box__svg-icon {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(100%) saturate(1925%) hue-rotate(10deg) brightness(100%) contrast(98%);
+}
+
+.info-box--info .info-box__svg-icon {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(70%) saturate(4498%) hue-rotate(165deg) brightness(98%) contrast(93%);
+}
+
+.info-box--success .info-box__svg-icon {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(69%) saturate(1329%) hue-rotate(95deg) brightness(95%) contrast(86%);
+}
+
+/* Title */
+.info-box__title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--copper-light);
+}
+
+.info-box--danger .info-box__title {
+  color: var(--danger-primary);
+}
+
+.info-box--warning .info-box__title {
+  color: var(--warning-primary);
+}
+
+.info-box--info .info-box__title {
+  color: var(--info-primary);
+}
+
+.info-box--success .info-box__title {
+  color: var(--success-primary);
+}
+
+/* Content */
+.info-box__content {
+  margin: 0;
+}
+
+.info-box__content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Markdown formatting */
+.info-box__content strong {
+  color: var(--copper-light);
+  font-weight: 600;
+}
+
+.info-box__content em {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-box {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .info-box__header {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .info-box__icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .info-box__svg-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .info-box__title {
+    font-size: 1rem;
+  }
+  
+  .info-box__content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .info-box__header {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .info-box__title {
+    font-size: 0.95rem;
+  }
+}

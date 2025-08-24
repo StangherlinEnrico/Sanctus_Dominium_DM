@@ -1,0 +1,89 @@
+/* CSS Variables già definite nel progetto principale */
+:root {
+  --copper-primary: #b87333;
+  --copper-light: #daa520;
+  --copper-dark: #8b4513;
+  --text-primary: #e0e0e0;
+  --text-secondary: #c0c0c0;
+  --text-muted: #a0a0a0;
+}
+
+/* Text Section Container */
+.text-section {
+  margin-bottom: 64px;
+}
+
+/* Section Title */
+.text-section__title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--copper-primary);
+  margin-bottom: 32px;
+  text-align: center;
+  position: relative;
+}
+
+.text-section__title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--copper-light), transparent);
+}
+
+/* Content Box */
+.text-section__content {
+  background: rgba(15, 15, 15, 0.6);
+  border: 1px solid var(--copper-dark);
+  border-radius: 16px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.text-section__content:hover {
+  border-color: var(--copper-primary);
+  box-shadow: 0 4px 20px rgba(184, 115, 51, 0.2);
+}
+
+/* Content Text */
+.text-section__content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin: 0;
+  text-align: justify;
+}
+
+/* Markdown formatting */
+.text-section__content strong {
+  color: var(--copper-light);
+  font-weight: 600;
+}
+
+.text-section__content em {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-section__title {
+    font-size: 1.8rem;
+  }
+  
+  .text-section__content {
+    padding: 24px;
+  }
+  
+  .text-section__content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
