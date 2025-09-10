@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
-.section-button.active {
-  background: rgba(184, 115, 51, 0.25);
-  border-left-color: var(--copper-light);
-  color: var(--copper-light);
-  box-shadow: inset 0 0 12px rgba(184, 115, 51, 0.3);
-}
-
-.section-button.active:hover {
-  background: rgba(184, 115, 51, 0.3);
-}.main-page-button.active {
-  background: rgba(184, 115, 51, 0.25);
-  border-left-color: var(--copper-light);
-  color: var(--copper-light);
-  box-shadow: inset 0 0 12px rgba(184, 115, 51, 0.3);
-}
-
-.main-page-button.active:hover {
-  background: rgba(184, 115, 51, 0.3);
-}
-
 /* CSS Variables per Sanctus Dominium */
 :root {
   --copper-primary: #b87333;
@@ -51,38 +31,7 @@
   -ms-user-select: none;
 }
 
-/* Responsive - sidebar stretta */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 80px;
-  }
-  
-  .sidebar-header {
-    padding: 16px 8px;
-  }
-  
-  .title-full,
-  .subtitle-full {
-    display: none;
-  }
-  
-  .title-short,
-  .subtitle-short {
-    display: block;
-  }
-}
-
-/* Default - sidebar larga */
-.title-short,
-.subtitle-short {
-  display: none;
-}
-
-.title-full,
-.subtitle-full {
-  display: block;
-}
-
+/* Header del drawer */
 .sidebar-header {
   padding: 24px 20px;
   border-bottom: 1px solid var(--copper-dark);
@@ -119,66 +68,7 @@
   display: block;
 }
 
-/* Responsive - sidebar stretta */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 80px;
-  }
-  
-  .sidebar-header {
-    padding: 16px 8px;
-  }
-  
-  .title-full,
-  .subtitle-full {
-    display: none !important;
-  }
-  
-  .title-short,
-  .subtitle-short {
-    display: block !important;
-  }
-  
-  .sidebar-title {
-    font-size: 1.4rem;
-  }
-  
-  .sidebar-subtitle {
-    font-size: 0.8rem;
-  }
-  
-  /* Nascondi titoli sezioni */
-  .section-title {
-    display: none;
-  }
-  
-  /* Solo icone nei pulsanti */
-  .section-button {
-    padding: 14px 12px;
-    justify-content: center;
-  }
-  
-  .button-text {
-    display: none;
-  }
-  
-  .button-icon {
-    width: auto;
-  }
-  
-  /* Settings button responsive */
-  .settings-button {
-    padding: 12px;
-    justify-content: center;
-  }
-  
-  /* Main page button responsive */
-  .main-page-button {
-    padding: 14px 12px;
-    justify-content: center;
-  }
-}
-
+/* Area di navigazione */
 .sidebar-nav {
   flex: 1;
   overflow-y: auto;
@@ -233,6 +123,18 @@
   border-left-color: var(--copper-light);
 }
 
+.main-page-button.active {
+  background: rgba(184, 115, 51, 0.25);
+  border-left-color: var(--copper-light);
+  color: var(--copper-light);
+  box-shadow: inset 0 0 12px rgba(184, 115, 51, 0.3);
+}
+
+.main-page-button.active:hover {
+  background: rgba(184, 115, 51, 0.3);
+}
+
+/* Titoli sezioni */
 .section-title {
   font-family: 'Cinzel', serif;
   font-size: 0.85rem;
@@ -249,6 +151,7 @@
   flex-direction: column;
 }
 
+/* Pulsanti sezioni */
 .section-button {
   background: transparent;
   border: none;
@@ -277,6 +180,18 @@
   border-left-color: var(--copper-light);
 }
 
+.section-button.active {
+  background: rgba(184, 115, 51, 0.25);
+  border-left-color: var(--copper-light);
+  color: var(--copper-light);
+  box-shadow: inset 0 0 12px rgba(184, 115, 51, 0.3);
+}
+
+.section-button.active:hover {
+  background: rgba(184, 115, 51, 0.3);
+}
+
+/* Icone e testo pulsanti */
 .button-icon {
   font-size: 1.2rem;
   width: 24px;
@@ -334,4 +249,64 @@
 
 .sidebar-nav::-webkit-scrollbar-thumb:hover {
   background: var(--copper-primary);
+}
+
+/* Responsive Design - Sidebar stretta */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+  
+  .sidebar-header {
+    padding: 16px 8px;
+  }
+  
+  .title-full,
+  .subtitle-full {
+    display: none;
+  }
+  
+  .title-short,
+  .subtitle-short {
+    display: block;
+  }
+  
+  .sidebar-title {
+    font-size: 1.4rem;
+  }
+  
+  .sidebar-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  /* Nascondi titoli sezioni */
+  .section-title {
+    display: none;
+  }
+  
+  /* Solo icone nei pulsanti */
+  .section-button {
+    padding: 14px 12px;
+    justify-content: center;
+  }
+  
+  .button-text {
+    display: none;
+  }
+  
+  .button-icon {
+    width: auto;
+  }
+  
+  /* Settings button responsive */
+  .settings-button {
+    padding: 12px;
+    justify-content: center;
+  }
+  
+  /* Main page button responsive */
+  .main-page-button {
+    padding: 14px 12px;
+    justify-content: center;
+  }
 }

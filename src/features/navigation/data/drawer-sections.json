@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "title": "Fondamenta dell'Impero",
+      "buttons": [
+        {
+          "id": "races",
+          "title": "Razze sotto il giogo",
+          "icon": "🧬"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-15",
+    "totalSections": 1,
+    "totalPages": 1,
+    "description": "Configurazione essenziale delle sezioni del drawer per Sanctus Dominium"
+  }
+}

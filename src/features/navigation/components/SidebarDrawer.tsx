@@ -1,26 +1,15 @@
 import React from "react";
-import "./Sidebar.css";
+import "./style.css";
+import { DrawerSection } from "../types/navigation.types";
 
-interface SectionButton {
-  id: string;
-  title: string;
-  icon: string;
-  onClick?: () => void;
-}
-
-interface SectionGroup {
-  title: string;
-  buttons: SectionButton[];
-}
-
-interface SidebarProps {
+interface SidebarDrawerProps {
   className?: string;
-  sections?: SectionGroup[];
+  sections?: DrawerSection[];
   onArchiveClick?: () => void;
   activePageId?: string;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({
+const SidebarDrawer: React.FC<SidebarDrawerProps> = ({
   className = "",
   sections = [],
   onArchiveClick,
@@ -28,7 +17,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   return (
     <aside className={`sidebar ${className}`}>
-      {/* Header del sidebar */}
+      {/* Header del drawer */}
       <div className="sidebar-header">
         <h1 className="sidebar-title">
           <span className="title-full">SANCTUS DOMINIUM</span>
@@ -99,4 +88,4 @@ const Sidebar: React.FC<SidebarProps> = ({
   );
 };
 
-export default Sidebar;
+export default SidebarDrawer;

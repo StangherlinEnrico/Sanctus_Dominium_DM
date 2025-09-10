@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { getPageId } from "../utils/pageMapping";
-import { getChapterInfo, formatChapterInfo } from "../utils/chapterMapping";
+import { getPageId } from "../features/navigation/utils/pageMapping";
+import {
+  getChapterInfo,
+  formatChapterInfo,
+} from "../features/navigation/utils/chapterMapping";
 import { getRandomQuote, copyQuoteToClipboard } from "../utils/archiveQuotes";
 import type { Quote, ArchivePageProps } from "../types/archiveQuoteInterfaces";
-import "./ArchivePage.css";
+import "./MainPage.css";
 
 // Import delle icone SVG come immagini
 import BookRibbonIcon from "../assets/icons/book_ribbon.svg";
 import ContentCopyIcon from "../assets/icons/content_copy.svg";
 import RandomDiceIcon from "../assets/icons/random_dice.svg";
 
-const ArchivePage: React.FC<ArchivePageProps> = ({
+const MainPage: React.FC<ArchivePageProps> = ({
   onContinueReading,
   lastVisitedPage = "Razze sotto il giogo",
 }) => {
@@ -65,7 +68,7 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
   const chapterInfo = getChapterInfo(lastPageId);
 
   return (
-    <div className="archive-page">
+    <div className="main-page">
       {/* Background decorativo */}
       <div className="background-ornaments">
         <div className="ornament ornament-1">⚜</div>
@@ -74,13 +77,13 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
         <div className="ornament ornament-4">✠</div>
       </div>
 
-      <div className="archive-container">
+      <div className="main-container">
         {/* Header */}
-        <header className="archive-header">
+        <header className="main-header">
           <div className="header-ornament">✠ ⚜ ✠</div>
-          <h1 className="archive-title">ARCHIVIO SEGRETO</h1>
-          <h2 className="archive-subtitle">DELL'IMPERO</h2>
-          <p className="archive-description">
+          <h1 className="main-title">ARCHIVIO SEGRETO</h1>
+          <h2 className="main-subtitle">DELL'IMPERO</h2>
+          <p className="main-description">
             Documenti classificati · Solo per Dungeon Master · Accesso limitato
           </p>
         </header>
@@ -154,7 +157,7 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
         </section>
 
         {/* Footer */}
-        <footer className="archive-footer">
+        <footer className="main-footer">
           <div className="footer-info">
             <p>Sanctus Dominium - Archivio Riservato del Dungeon Master</p>
           </div>
@@ -180,4 +183,4 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
   );
 };
 
-export default ArchivePage;
+export default MainPage;

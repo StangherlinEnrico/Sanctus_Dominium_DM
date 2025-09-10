@@ -1,5 +1,5 @@
 import React from "react";
-import ArchivePage from "./ArchivePage";
+import MainPage from "../../../pages/MainPage";
 
 interface PageRouterProps {
   currentPage: string;
@@ -16,16 +16,19 @@ const PageRouter: React.FC<PageRouterProps> = ({
     switch (currentPage) {
       case "archive":
         return (
-          <ArchivePage
+          <MainPage
             lastVisitedPage={lastVisitedPage}
             onContinueReading={onContinueReading}
           />
         );
       case "races":
-        return <PlaceholderPage title="Razze" />;
+        return <PlaceholderPage title="Razze sotto il giogo" />;
+      case "settings":
+        return <PlaceholderPage title="Impostazioni" />;
       default:
+        // Fallback alla pagina principale
         return (
-          <ArchivePage
+          <MainPage
             lastVisitedPage={lastVisitedPage}
             onContinueReading={onContinueReading}
           />
