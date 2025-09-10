@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
-import type { InfoBox as InfoBoxType } from "../types/section";
 import "./InfoBox.css";
+
+// Interfacce definite direttamente nel file
+interface InfoBoxType {
+  type: "infoBox";
+  svgIcon: string;
+  title: string;
+  content: string;
+  severity: "danger" | "warning" | "info" | "success";
+}
 
 interface InfoBoxProps {
   data: InfoBoxType;

@@ -1,9 +1,47 @@
 import React from "react";
-import type { GridSection as GridSectionType } from "../types/section";
 import ContentBox from "./ContentBox";
 import InfoBox from "./InfoBox";
 import TextSection from "./TextSection";
 import "./GridSection.css";
+
+// Interfacce per gli item della griglia
+interface ContentBoxAction {
+  type: "popupOpener";
+  label?: string;
+}
+
+interface ContentBoxItem {
+  svgIcon?: string;
+  title: string;
+  subtitle?: string;
+  content: string;
+  tag?: string;
+  additionalInfo?: string[];
+  action?: ContentBoxAction;
+}
+
+interface InfoBoxItem {
+  svgIcon: string;
+  title: string;
+  content: string;
+  severity: "danger" | "warning" | "info" | "success";
+}
+
+interface TextSectionItem {
+  title: string;
+  content: string;
+}
+
+// Interfaccia principale per GridSection
+interface GridSectionType {
+  type: "gridSection";
+  title: string;
+  subtitle?: string;
+  columns: number;
+  gap?: "small" | "medium" | "large";
+  itemType: "contentBox" | "infoBox" | "textSection";
+  items: Array<ContentBoxItem | InfoBoxItem | TextSectionItem>;
+}
 
 interface GridSectionProps {
   data: GridSectionType;

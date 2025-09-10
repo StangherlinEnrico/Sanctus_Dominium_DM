@@ -1,5 +1,5 @@
 import archiveQuotesData from "../data/archive-quotes.json";
-import type { Quote, QuoteData } from "../types/archive";
+import type { Quote, QuoteData } from "../types/archiveQuoteInterfaces";
 
 /**
  * Carica tutte le citazioni disponibili

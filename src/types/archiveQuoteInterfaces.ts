@@ -6,8 +6,3 @@ export interface Quote {
 export interface QuoteData {
   quotes: Quote[];
 }
-
-export interface ArchivePageProps {
-  onContinueReading?: () => void;
-  lastVisitedPage?: string;
-}

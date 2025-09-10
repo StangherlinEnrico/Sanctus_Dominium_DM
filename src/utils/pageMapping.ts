@@ -1,26 +1,7 @@
 // Mappa centrale delle pagine: ID -> Nome
 export const PAGE_NAMES: Record<string, string> = {
   archive: "Archivio Segreto",
-  "world-overview": "Un mondo di devozione forzata",
   races: "Razze sotto il giogo",
-  classes: "Classi della teocrazia",
-  backgrounds: "Background di sottomissione e ribellione",
-  feats: "Talenti della fede manipolata",
-  surveillance: "Sistema di sorveglianza e sospetto",
-  devotion: "Devozione e condizionamento",
-  "double-life": "Doppia vita e identità",
-  "silence-zones": "Zone di silenzio",
-  resistance: "Resistenza e sabotaggio",
-  "corruption-economy": "Economia della corruzione",
-  "money-equipment": "Denaro ed equipaggiamento",
-  "world-sanctus": "Il mondo del Sanctus Dominium",
-  "sanctus-centrale": "Sanctus Centrale",
-  "confinium-borealis": "Confinium Borealis",
-  "prosperitas-australis": "Prosperitas Australis",
-  "umbra-occidentalis": "Umbra Occidentalis",
-  "orientalis-extrema": "Orientalis Extrema",
-  "insularum-mare": "Insularum Mare",
-  "cordillera-centralis": "Cordillera Centralis",
 };
 
 // Mappa inversa: Nome -> ID

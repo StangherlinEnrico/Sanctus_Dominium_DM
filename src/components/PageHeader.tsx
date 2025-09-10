@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
-import type { PageHeader as PageHeaderType } from "../types/pageHeader";
 import "./PageHeader.css";
+
+// Interfacce definite direttamente nel file
+interface PageHeaderType {
+  chapterBadge?: string;
+  icon?: string;
+  svgIcon?: string;
+  title: string;
+  subtitle?: string;
+}
 
 interface PageHeaderProps {
   header: PageHeaderType;

@@ -4,7 +4,7 @@ import PageRouter from "./components/PageRouter";
 import drawerSectionsData from "./data/drawer-sections.json";
 import { getPageName, getPageId } from "./utils/pageMapping";
 import { loadLastVisitedPage, saveLastVisitedPage } from "./utils/storage";
-import type { DrawerConfig, DrawerSection } from "./types/interfaces";
+import type { DrawerConfig, DrawerSection } from "./types/drawerInterfaces";
 import "./App.css";
 import "../src/styles/global-scrollbar.css";
 

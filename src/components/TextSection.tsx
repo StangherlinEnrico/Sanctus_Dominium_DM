@@ -1,6 +1,12 @@
 import React from "react";
-import type { TextSection as TextSectionType } from "../types/section";
 import "./TextSection.css";
+
+// Interfacce definite direttamente nel file
+interface TextSectionType {
+  type: "textSection";
+  title: string;
+  content: string;
+}
 
 interface TextSectionProps {
   data: TextSectionType;

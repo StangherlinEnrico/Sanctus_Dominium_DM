@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from "react";
-import type { ContentBox as ContentBoxType } from "../types/section";
 import "./ContentBox.css";
+
+interface ContentBoxAction {
+  type: "popupOpener";
+  label?: string;
+}
+
+interface ContentBoxType {
+  type: "contentBox";
+  svgIcon?: string;
+  title: string;
+  subtitle?: string;
+  content: string;
+  tag?: string;
+  additionalInfo?: string[];
+  action?: ContentBoxAction;
+}
 
 interface ContentBoxProps {
   data: ContentBoxType;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { getPageId } from "../utils/pageMapping";
 import { getChapterInfo, formatChapterInfo } from "../utils/chapterMapping";
-import { getRandomQuote, copyQuoteToClipboard } from "../utils/quotes";
-import type { Quote, ArchivePageProps } from "../types/archive";
+import { getRandomQuote, copyQuoteToClipboard } from "../utils/archiveQuotes";
+import type { Quote, ArchivePageProps } from "../types/archiveQuoteInterfaces";
 import "./ArchivePage.css";
 
 // Import delle icone SVG come immagini
@@ -77,7 +77,6 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
       <div className="archive-container">
         {/* Header */}
         <header className="archive-header">
-          <div className="classification-badge">RISERVATO</div>
           <div className="header-ornament">✠ ⚜ ✠</div>
           <h1 className="archive-title">ARCHIVIO SEGRETO</h1>
           <h2 className="archive-subtitle">DELL'IMPERO</h2>
@@ -90,7 +89,7 @@ const ArchivePage: React.FC<ArchivePageProps> = ({
         <section className="quote-section">
           <div className="quote-card">
             <div className="quote-header">
-              <span className="quote-label">Citazione dal giorno</span>
+              <span className="quote-label">Citazione del giorno</span>
               <div className="quote-actions">
                 <button className="copy-quote-button" onClick={handleCopyQuote}>
                   <img

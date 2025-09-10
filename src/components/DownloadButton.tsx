@@ -1,33 +1,32 @@
 import React from "react";
-import type { PageMetadata } from "../types/pageMetadata";
 import DownloadIcon from "../assets/icons/download.svg";
 import "./DownloadButton.css";
 
 interface DownloadButtonProps {
-  metadata?: PageMetadata;
+  downloadUrl?: string; // Ora riceve direttamente la stringa URL
   buttonText?: string;
   className?: string;
 }
 
 const DownloadButton: React.FC<DownloadButtonProps> = ({
-  metadata,
+  downloadUrl,
   buttonText = "Scarica il capitolo",
   className = "",
 }) => {
   const handleDownload = () => {
-    if (metadata?.downloadUrl) {
+    if (downloadUrl) {
       const link = document.createElement("a");
-      link.href = metadata.downloadUrl;
+      link.href = downloadUrl;
       link.download = "";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
 
-      console.log(`Download avviato: ${metadata.downloadUrl}`);
+      console.log(`Download avviato: ${downloadUrl}`);
     }
   };
 
-  if (!metadata?.downloadUrl) {
+  if (!downloadUrl) {
     return null;
   }
 
