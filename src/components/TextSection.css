@@ -14,6 +14,11 @@
   margin-bottom: 16px;
 }
 
+/* Text Section senza titolo - riduce il margine superiore */
+.text-section:not(:has(.text-section__title)) {
+  margin-top: 24px;
+}
+
 /* Section Title */
 .text-section__title {
   font-family: 'Cinzel', serif;
@@ -72,8 +77,71 @@
   font-style: italic;
 }
 
+/* Additional Info List */
+.text-section__additional-info {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(184, 115, 51, 0.3);
+}
+
+.text-section__additional-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-section__additional-info li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.text-section__additional-info li:last-child {
+  margin-bottom: 0;
+}
+
+.text-section__additional-info li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--copper-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Markdown formatting per additional info */
+.text-section__additional-info strong {
+  color: var(--copper-light);
+  font-weight: 600;
+}
+
+.text-section__additional-info em {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Supporto per browser più vecchi che non supportano :has() */
+@supports not (selector(:has(.text-section__title))) {
+  /* Fallback: riduce sempre il margine quando non c'è supporto per :has() */
+  .text-section {
+    margin-top: 32px;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .text-section {
+    margin-top: 32px;
+  }
+  
+  .text-section:not(:has(.text-section__title)) {
+    margin-top: 16px;
+  }
+  
   .text-section__title {
     font-size: 1.8rem;
   }

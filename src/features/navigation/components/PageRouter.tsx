@@ -1,5 +1,6 @@
 import React from "react";
 import MainPage from "../../../pages/MainPage";
+import RacesPage from "../../../pages/RacesPage";
 
 interface PageRouterProps {
   currentPage: string;
@@ -22,7 +23,7 @@ const PageRouter: React.FC<PageRouterProps> = ({
           />
         );
       case "races":
-        return <PlaceholderPage title="Razze sotto il giogo" />;
+        return <RacesPage />;
       case "settings":
         return <PlaceholderPage title="Impostazioni" />;
       default:

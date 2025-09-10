@@ -8,6 +8,7 @@ interface InfoBoxType {
   title: string;
   content: string;
   severity: "danger" | "warning" | "info" | "success";
+  additionalInfo?: string[]; // Supporto per liste puntate
 }
 
 interface InfoBoxProps {
@@ -61,6 +62,20 @@ const InfoBox: React.FC<InfoBoxProps> = ({ data }) => {
       </div>
       <div className="info-box__content">
         <p dangerouslySetInnerHTML={{ __html: formatContent(data.content) }} />
+
+        {/* Lista aggiuntiva come elenco puntato */}
+        {data.additionalInfo && data.additionalInfo.length > 0 && (
+          <div className="info-box__additional-info">
+            <ul>
+              {data.additionalInfo.map((info, index) => (
+                <li
+                  key={index}
+                  dangerouslySetInnerHTML={{ __html: formatContent(info) }}
+                />
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
